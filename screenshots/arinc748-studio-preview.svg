@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="1000" height="650" style="background:#070b14; font-family:'SF Mono', 'Roboto Mono', monospace;">
+  <rect x="0" y="0" width="1000" height="50" fill="#090e1a" stroke="#1e293b" stroke-width="1"/>
+  <text x="24" y="32" fill="#00f0ff" font-size="16" font-weight="bold" letter-spacing="1">ARINC748FORGE PRO</text>
+  <rect x="210" y="16" width="95" height="20" rx="3" fill="#00f0ff" fill-opacity="0.15" stroke="#00f0ff"/>
+  <text x="257" y="30" fill="#00f0ff" font-size="10" font-weight="bold" text-anchor="middle">v1.0.0 STABLE</text>
+  <rect x="315" y="16" width="180" height="20" rx="3" fill="#10b981" fill-opacity="0.15" stroke="#10b981"/>
+  <text x="405" y="30" fill="#10b981" font-size="10" font-weight="bold" text-anchor="middle">ARINC 748 MLS CERTIFIED</text>
+  <text x="976" y="32" fill="#94a3b8" font-size="11" text-anchor="end">RECORD #404 | EGLL 27R</text>
+
+  <!-- Left Main Area: PFD Cross-Pointer & TRSB Oscilloscope -->
+  <rect x="20" y="65" width="630" height="340" rx="8" fill="#0d1424" stroke="#1e293b"/>
+  <text x="36" y="92" fill="#00f0ff" font-size="13" font-weight="bold">🛬 PRIMARY FLIGHT DISPLAY (PFD) MLS CROSS-POINTER &amp; TRSB TIMING</text>
+
+  <!-- PFD Cross Pointer Box -->
+  <rect x="36" y="105" width="280" height="220" rx="6" fill="#050811" stroke="#1e293b"/>
+  <!-- Horizon -->
+  <rect x="46" y="115" width="260" height="100" fill="#1e40af"/>
+  <rect x="46" y="215" width="260" height="100" fill="#78350f"/>
+  <line x1="46" y1="215" x2="306" y2="215" stroke="#ffffff" stroke-width="2"/>
+  <!-- Aircraft Cross -->
+  <line x1="150" y1="215" x2="166" y2="215" stroke="#f59e0b" stroke-width="3"/>
+  <line x1="186" y1="215" x2="202" y2="215" stroke="#f59e0b" stroke-width="3"/>
+  <line x1="176" y1="205" x2="176" y2="225" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- Azimuth Dots -->
+  <circle cx="106" cy="295" r="3" fill="#64748b"/>
+  <circle cx="141" cy="295" r="3" fill="#64748b"/>
+  <circle cx="211" cy="295" r="3" fill="#64748b"/>
+  <circle cx="246" cy="295" r="3" fill="#64748b"/>
+  <!-- Azimuth Needle (Magenta) -->
+  <polygon points="166,288 171,295 166,302 161,295" fill="#d946ef"/>
+
+  <!-- Elevation Dots -->
+  <circle cx="280" cy="145" r="3" fill="#64748b"/>
+  <circle cx="280" cy="180" r="3" fill="#64748b"/>
+  <circle cx="280" cy="250" r="3" fill="#64748b"/>
+  <circle cx="280" cy="285" r="3" fill="#64748b"/>
+  <!-- Elevation Needle (Magenta) -->
+  <polygon points="280,228 285,223 280,218 275,223" fill="#d946ef"/>
+
+  <!-- TRSB Oscilloscope Container -->
+  <rect x="330" y="105" width="305" height="105" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="342" y="125" fill="#00f0ff" font-size="9" font-weight="bold">TRSB SCANNING BEAM PULSE OSCILLOSCOPE</text>
+  <text x="342" y="145" fill="#94a3b8" font-size="8">SCANNING VELOCITY: <tspan fill="#ffffff" font-weight="bold">20,000 °/s (50 µs/deg)</tspan></text>
+  <text x="342" y="162" fill="#94a3b8" font-size="8">AZIMUTH DELTA-T: <tspan fill="#10b981" font-weight="bold">4,845.0 µs</tspan> (T0: 4800 µs)</text>
+  <text x="342" y="179" fill="#94a3b8" font-size="8">ELEVATION DELTA-T: <tspan fill="#10b981" font-weight="bold">3,038.0 µs</tspan> (T0: 3350 µs)</text>
+  <text x="342" y="196" fill="#94a3b8" font-size="8">BEAM LOCK: <tspan fill="#10b981" font-weight="bold">AZ &amp; EL LOCKED (&gt; 37 dB SNR)</tspan></text>
+
+  <!-- Ground Station Tuning & Channel Box -->
+  <rect x="330" y="220" width="305" height="105" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="342" y="240" fill="#00f0ff" font-size="9" font-weight="bold">C-BAND TUNER &amp; APPROACH GEOMETRY</text>
+  <text x="342" y="260" fill="#94a3b8" font-size="8">AIRPORT / RWY: <tspan fill="#ffffff" font-weight="bold">EGLL / 27R (LONDON HEATHROW)</tspan></text>
+  <text x="342" y="277" fill="#94a3b8" font-size="8">C-BAND CHANNEL: <tspan fill="#ffffff" font-weight="bold">CH 550 (5046.0 MHz)</tspan></text>
+  <text x="342" y="294" fill="#94a3b8" font-size="8">GLIDEPATH: <tspan fill="#ffffff" font-weight="bold">3.00°</tspan> | DME/P: <tspan fill="#10b981" font-weight="bold">3.80 NM</tspan></text>
+  <text x="342" y="311" fill="#94a3b8" font-size="8">STATUS: <tspan fill="#10b981" font-weight="bold">FULL TRSB AUTOLAND (CAT III ACTIVE)</tspan></text>
+
+  <!-- Bottom Left: Approach Dynamics & Guidance Sliders -->
+  <rect x="20" y="420" width="630" height="210" rx="8" fill="#0d1424" stroke="#1e293b"/>
+  <text x="36" y="445" fill="#00f0ff" font-size="12" font-weight="bold">⚡ REAL-TIME APPROACH DYNAMICS &amp; DDM TELEMETRY</text>
+
+  <!-- Telemetry Row -->
+  <rect x="36" y="465" width="138" height="65" rx="4" fill="#090e1a" stroke="#1e293b"/>
+  <text x="46" y="482" fill="#64748b" font-size="8">AZIMUTH DEV</text>
+  <text x="46" y="502" fill="#00f0ff" font-size="12" font-weight="bold">-0.035 DDM</text>
+  <text x="46" y="518" fill="#10b981" font-size="8">-0.45° (LEFT)</text>
+
+  <rect x="184" y="465" width="138" height="65" rx="4" fill="#090e1a" stroke="#1e293b"/>
+  <text x="194" y="482" fill="#64748b" font-size="8">ELEVATION DEV</text>
+  <text x="194" y="502" fill="#00f0ff" font-size="12" font-weight="bold">+0.030 DDM</text>
+  <text x="194" y="518" fill="#10b981" font-size="8">+0.12° (ABOVE)</text>
+
+  <rect x="332" y="465" width="138" height="65" rx="4" fill="#090e1a" stroke="#1e293b"/>
+  <text x="342" y="482" fill="#64748b" font-size="8">DME/P RANGE</text>
+  <text x="342" y="502" fill="#00f0ff" font-size="12" font-weight="bold">3.80 NM</text>
+  <text x="342" y="518" fill="#10b981" font-size="8">PRECISION DME</text>
+
+  <rect x="480" y="465" width="154" height="65" rx="4" fill="#090e1a" stroke="#1e293b"/>
+  <text x="490" y="482" fill="#64748b" font-size="8">RADIO ALTITUDE</text>
+  <text x="490" y="502" fill="#00f0ff" font-size="12" font-weight="bold">1,180 FT</text>
+  <text x="490" y="518" fill="#10b981" font-size="8">DECISION HT: 50FT</text>
+
+  <!-- Feed -->
+  <rect x="36" y="540" width="598" height="75" rx="4" fill="#050811" stroke="#1e293b"/>
+  <text x="46" y="560" fill="#00f0ff" font-size="9" font-weight="bold">MLS TRSB GROUND TRANSMITTER: EGLL RWY 27R — 5046.0 MHz (C-BAND MICROWAVE)</text>
+  <text x="46" y="575" fill="#94a3b8" font-size="8">PROPORTIONAL GUIDANCE: AZIMUTH ±40.0° SECTOR | ELEVATION 0.9° TO 20.0°</text>
+  <text x="46" y="590" fill="#10b981" font-size="8">CURVED APPROACH SEGMENTATION READY | ZERO GROUND MULTIPATH BENDS | CAT III CERTIFIED</text>
+
+  <!-- Right Sidebar: ARINC 429 Bus Table & Normative Auditor -->
+  <rect x="670" y="65" width="310" height="240" rx="8" fill="#0d1424" stroke="#1e293b"/>
+  <text x="686" y="92" fill="#00f0ff" font-size="12" font-weight="bold">🎛️ ARINC 429 DISCRETE BUS STREAM</text>
+
+  <g font-size="8">
+    <rect x="686" y="105" width="278" height="26" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="122" fill="#00f0ff">LABEL 060 — MLS Approach Status</text>
+    <text x="880" y="122" fill="#ffffff">0x07E12030</text>
+    <text x="955" y="122" fill="#10b981" font-weight="bold" text-anchor="end">OK</text>
+
+    <rect x="686" y="136" width="278" height="26" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="153" fill="#00f0ff">LABEL 061 — MLS Channel (CH 550)</text>
+    <text x="880" y="153" fill="#ffffff">0x00898031</text>
+    <text x="955" y="153" fill="#10b981" font-weight="bold" text-anchor="end">OK</text>
+
+    <rect x="686" y="167" width="278" height="26" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="184" fill="#00f0ff">LABEL 062 — Azimuth Deviation DDM</text>
+    <text x="880" y="184" fill="#ffffff">0xFFE28032</text>
+    <text x="955" y="184" fill="#10b981" font-weight="bold" text-anchor="end">OK</text>
+
+    <rect x="686" y="198" width="278" height="26" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="215" fill="#00f0ff">LABEL 063 — Elevation Deviation DDM</text>
+    <text x="880" y="215" fill="#ffffff">0x003C4033</text>
+    <text x="955" y="215" fill="#10b981" font-weight="bold" text-anchor="end">OK</text>
+
+    <rect x="686" y="229" width="278" height="26" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="246" fill="#00f0ff">LABEL 064 — DME/P Precision Range</text>
+    <text x="880" y="246" fill="#ffffff">0x07998034</text>
+    <text x="955" y="246" fill="#10b981" font-weight="bold" text-anchor="end">OK</text>
+
+    <rect x="686" y="260" width="278" height="26" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="277" fill="#00f0ff">LABEL 273 — Azimuth Sector Limit (±40°)</text>
+    <text x="880" y="277" fill="#ffffff">0x0A0000BB</text>
+    <text x="955" y="277" fill="#10b981" font-weight="bold" text-anchor="end">OK</text>
+  </g>
+
+  <!-- Normative Auditor Panel -->
+  <rect x="670" y="320" width="310" height="310" rx="8" fill="#0d1424" stroke="#1e293b"/>
+  <text x="686" y="345" fill="#00f0ff" font-size="12" font-weight="bold">🛡️ 10-POINT NORMATIVE AUDITOR</text>
+  <rect x="885" y="332" width="80" height="18" rx="3" fill="#10b981" fill-opacity="0.15" stroke="#10b981"/>
+  <text x="925" y="345" fill="#10b981" font-size="8" font-weight="bold" text-anchor="middle">100% PASS (10/10)</text>
+
+  <g font-size="8">
+    <rect x="686" y="360" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="375" fill="#e2e8f0">CHK-01: C-Band 200-Channel Tuning Range</text>
+    <text x="955" y="375" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="386" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="401" fill="#e2e8f0">CHK-02: TRSB 20,000°/s Beam Timing Physics</text>
+    <text x="955" y="401" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="412" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="427" fill="#e2e8f0">CHK-03: Wide-Angle Proportional Azimuth (±40°)</text>
+    <text x="955" y="427" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="438" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="453" fill="#e2e8f0">CHK-04: Proportional Elevation Coverage (0.9°-20°)</text>
+    <text x="955" y="453" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="464" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="479" fill="#e2e8f0">CHK-05: Azimuth Deviation DDM Scaling</text>
+    <text x="955" y="479" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="490" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="505" fill="#e2e8f0">CHK-06: Elevation Deviation DDM Scaling (3.0°)</text>
+    <text x="955" y="505" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="516" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="531" fill="#e2e8f0">CHK-07: DME/P Precision Ranging Accuracy (&lt; 30m)</text>
+    <text x="955" y="531" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="542" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="557" fill="#e2e8f0">CHK-08: Auxiliary Data CRC Integrity Verification</text>
+    <text x="955" y="557" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="568" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="583" fill="#e2e8f0">CHK-09: ARINC 429 Discrete Labels 060-064</text>
+    <text x="955" y="583" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+
+    <rect x="686" y="594" width="278" height="22" rx="3" fill="#090e1a" stroke="#1e293b"/>
+    <text x="696" y="609" fill="#e2e8f0">CHK-10: Bit 32 Odd Parity Hardware Verification</text>
+    <text x="955" y="609" fill="#10b981" font-weight="bold" text-anchor="end">PASS</text>
+  </g>
+</svg>

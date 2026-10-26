@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#070b14; font-family:'SF Mono', 'Roboto Mono', monospace;">
+  <defs>
+    <linearGradient id="gradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title Banner -->
+  <rect x="30" y="25" width="940" height="65" rx="8" fill="#0d1424" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="50" y="55" fill="#00f0ff" font-size="18" font-weight="bold" letter-spacing="1">ARINC 748 MICROWAVE LANDING SYSTEM (MLS) ARCHITECTURE</text>
+  <text x="50" y="74" fill="#64748b" font-size="11">Time Reference Scanning Beam (TRSB) • 5 GHz C-Band (200 Ch) • Precision DME/P &amp; Curved Guidance</text>
+  <rect x="830" y="42" width="120" height="28" rx="4" fill="#00f0ff" fill-opacity="0.15" stroke="#00f0ff" stroke-width="1"/>
+  <text x="890" y="60" fill="#00f0ff" font-size="10" font-weight="bold" text-anchor="middle">RECORD #404</text>
+
+  <!-- Left: Ground Station & TRSB Scanning Antenna -->
+  <rect x="30" y="110" width="280" height="440" rx="8" fill="url(#gradCyan)" stroke="#00f0ff" stroke-width="1.5"/>
+  <text x="50" y="140" fill="#00f0ff" font-size="14" font-weight="bold">MLS GROUND TRANSMITTER</text>
+  <text x="50" y="160" fill="#94a3b8" font-size="10">London Heathrow (EGLL) Rwy 27R</text>
+
+  <rect x="50" y="180" width="240" height="75" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="205" fill="#e2e8f0" font-size="11" font-weight="bold">TRSB Azimuth Antenna (±40°)</text>
+  <text x="65" y="223" fill="#64748b" font-size="9">• 20,000 deg/s Scanning Beam Rate</text>
+  <text x="65" y="238" fill="#64748b" font-size="9">• Constant 50 µs/deg Time Delta (Vs)</text>
+
+  <rect x="50" y="270" width="240" height="75" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="295" fill="#10b981" font-size="11" font-weight="bold">TRSB Elevation Antenna (0.9°-20°)</text>
+  <text x="65" y="313" fill="#64748b" font-size="9">• Proportional Glidepath Coverage</text>
+  <text x="65" y="328" fill="#64748b" font-size="9">• Selectable 3.00° Nominal Descent</text>
+
+  <rect x="50" y="360" width="240" height="75" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="385" fill="#f59e0b" font-size="11" font-weight="bold">C-Band Frequency Generator</text>
+  <text x="65" y="403" fill="#64748b" font-size="9">• 5031.0 to 5090.7 MHz (300 kHz spacing)</text>
+  <text x="65" y="418" fill="#64748b" font-size="9">• Channel 550 = 5046.0 MHz Carrier</text>
+
+  <rect x="50" y="450" width="240" height="80" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="475" fill="#e2e8f0" font-size="11" font-weight="bold">Precision DME/P Ground Unit</text>
+  <text x="65" y="493" fill="#64748b" font-size="9">• Sub-30 meter range accuracy</text>
+  <text x="65" y="508" fill="#64748b" font-size="9">• Co-located runway threshold ranging</text>
+
+  <!-- Center: Airborne Receiver Signal Processing -->
+  <rect x="360" y="110" width="280" height="440" rx="8" fill="url(#gradGreen)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="380" y="140" fill="#10b981" font-size="14" font-weight="bold">AIRBORNE MLS RECEIVER</text>
+  <text x="380" y="160" fill="#94a3b8" font-size="10">ARINC 748 Receiver Processor</text>
+
+  <circle cx="500" cy="230" r="45" fill="#090e1a" stroke="#10b981" stroke-width="2"/>
+  <text x="500" y="225" fill="#10b981" font-size="12" font-weight="bold" text-anchor="middle">📡 TRSB</text>
+  <text x="500" y="242" fill="#64748b" font-size="9" text-anchor="middle">Oscilloscope</text>
+
+  <rect x="380" y="310" width="240" height="115" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="395" y="335" fill="#e2e8f0" font-size="11" font-weight="bold">Pulse Time Delta Decoders</text>
+  <text x="395" y="353" fill="#64748b" font-size="9">• Delta-T Az: 4800 - (100 * theta_az)</text>
+  <text x="395" y="368" fill="#64748b" font-size="9">• Delta-T El: 3350 - (100 * theta_el)</text>
+  <text x="395" y="383" fill="#64748b" font-size="9">• Sub-microsecond timing resolution</text>
+  <text x="395" y="398" fill="#64748b" font-size="9">• S/N Ratio &gt; 35 dB beam lock detect</text>
+
+  <rect x="380" y="445" width="240" height="85" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="395" y="470" fill="#f59e0b" font-size="11" font-weight="bold">ILS-Lookalike DDM Converter</text>
+  <text x="395" y="488" fill="#64748b" font-size="9">• Azimuth: ±0.155 DDM (±2.0° Full Scale)</text>
+  <text x="395" y="503" fill="#64748b" font-size="9">• Elevation: ±0.175 DDM (±0.70° Full Scale)</text>
+
+  <!-- Right: Cockpit Flight Guidance & ARINC 429 -->
+  <rect x="690" y="110" width="280" height="440" rx="8" fill="url(#gradAmber)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="710" y="140" fill="#f59e0b" font-size="14" font-weight="bold">FLIGHT DECK AVIONICS</text>
+  <text x="710" y="160" fill="#94a3b8" font-size="10">ARINC 429 100 kbps Guidance Stream</text>
+
+  <rect x="710" y="180" width="240" height="110" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="205" fill="#e2e8f0" font-size="11" font-weight="bold">ARINC 429 Guidance Labels</text>
+  <text x="725" y="223" fill="#64748b" font-size="9">• Label 060: MLS Approach Status</text>
+  <text x="725" y="238" fill="#64748b" font-size="9">• Label 061: Tuning Channel (CH 550)</text>
+  <text x="725" y="253" fill="#64748b" font-size="9">• Label 062: Azimuth Deviation DDM</text>
+  <text x="725" y="268" fill="#64748b" font-size="9">• Label 063: Elevation Deviation DDM</text>
+
+  <rect x="710" y="305" width="240" height="95" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="330" fill="#00f0ff" font-size="11" font-weight="bold">Ranging &amp; Sector Limits</text>
+  <text x="725" y="348" fill="#64748b" font-size="9">• Label 064: DME/P Precision Range</text>
+  <text x="725" y="363" fill="#64748b" font-size="9">• Label 273: Azimuth Sector Limit (±40°)</text>
+  <text x="725" y="378" fill="#64748b" font-size="9">• Bit 32 Hardware Odd Parity Verified</text>
+
+  <rect x="710" y="415" width="240" height="115" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="440" fill="#10b981" font-size="11" font-weight="bold">PFD &amp; Flight Director Interface</text>
+  <text x="725" y="458" fill="#64748b" font-size="9">• PFD Cross-Pointer Magenta Deviation</text>
+  <text x="725" y="473" fill="#64748b" font-size="9">• Autoland Cat III Auto-flare Guidance</text>
+  <text x="725" y="488" fill="#64748b" font-size="9">• Curved Segment Approach Tracking</text>
+
+  <!-- Connectors -->
+  <path d="M 310 215 L 360 215" stroke="#00f0ff" stroke-width="2"/>
+  <path d="M 640 215 L 690 215" stroke="#10b981" stroke-width="2"/>
+</svg>
